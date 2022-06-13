@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "utilisateur", schema = "baseoeuvre", catalog = "")
+@Table(name = "utilisateur", schema = "permispiste", catalog = "")
 @NamedQuery(name = "UtilisateurEntity.rechercheNom", query = "select ut  from UtilisateurEntity   ut where ut.nomUtil = :name")
 public class UtilisateurEntity {
     private Integer numUtil;

@@ -3,12 +3,10 @@
              xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
-    <persistence-unit name="oeuvresjpa">
+    <persistence-unit name="pistejpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.epul.piste.domain.ApprenantEntity</class>
-        <class>com.epul.piste.domain.OeuvreventeEntity</class>
-        <class>com.epul.piste.domain.ProprietaireEntity</class>
-        <class>com.epul.piste.domain.ReservationEntity</class>
+        <class>com.epul.piste.domain.MissionEntity</class>
         <class>com.epul.piste.domain.UtilisateurEntity</class>
 
         <properties>

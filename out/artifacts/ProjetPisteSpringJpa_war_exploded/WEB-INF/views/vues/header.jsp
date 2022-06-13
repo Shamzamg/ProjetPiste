@@ -21,23 +21,6 @@
         }
     </script>
     <meta charset="UTF-8">
-    <title>${title}</title>
-    <script type="text/javascript">
-        function ajaxOeuvre(){
-            console.log("On entre dans la méthode Ajax");
-            $.ajax({
-                type: "GET",
-                url: "/proprietaire/listerOeuvresProp/" + $('#id_prop option:selected').val(),
-                success: function(data){
-                    $("#resultat").html(data);
-                },
-                error: function(xhr, status, errorThrown){
-                    var err = "Status: " + status + " " + errorThrown;
-                    console.log(err);
-                }
-            })
-        }
-    </script>
 </head>
 
 
